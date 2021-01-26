@@ -17,7 +17,7 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r wearweather
+  - zip -r wearweather *
   - mkdir -p deploy
   - mv wearweather.zip deploy/wearweather.zip
 
