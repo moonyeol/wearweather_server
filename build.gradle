@@ -18,7 +18,7 @@ apply plugin: 'io.spring.dependency-management'
 
 
 group 'com.moon.toyproject'
-version '1.0.1-SNAPSHOT'
+version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
@@ -39,4 +39,9 @@ dependencies {
 
     testCompile('org.springframework.security:spring-security-test')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+test {
+    testLogging {
+        exceptionFormat = 'full'
+    }
 }
