@@ -36,7 +36,7 @@ public class HelloControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(hello));
     }
-/*
+
     @WithMockUser(roles="USER")
     @Test
     public void helloDto가_리턴된다() throws Exception{
@@ -50,6 +50,6 @@ public class HelloControllerTest {
                 .andExpect(jsonPath("$.name",is(name)))
                 .andExpect(jsonPath("$.amount",is(amount)));
     }
-*/
+
 
 }
